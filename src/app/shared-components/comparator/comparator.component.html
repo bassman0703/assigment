@@ -1,0 +1,14 @@
+<div class="text-comparator">
+  <div>
+    <label for="text1">Text 1:</label>
+    <textarea id="text1" [(ngModel)]="text1" (ngModelChange)="compareText()"></textarea>
+  </div>
+  <div>
+    <label for="text2">Text 2:</label>
+    <textarea id="text2" [(ngModel)]="text2" (ngModelChange)="compareText()"></textarea>
+  </div>
+  <div>
+    <h3>Differences:</h3>
+    <pre class="differences">{{ differenceText }}</pre>
+  </div>
+</div>
